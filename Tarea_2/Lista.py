@@ -4,19 +4,32 @@ lista = [ ]
 for i in range(10):
     numero = r.randint(1, 50)
     lista.append(numero)
-print(lista)
+
 def mayor(lista):
     max = lista[0]
     for x in lista:
         if x > max:
             max = x
-    return max
-print(mayor(lista))
+    return print(f"El número mayor de la lista es: {max}")
+
 def primos(lista):
     primos = []
-    if lista < 2:
-        print('no es primo')
-    for i in range(2, lista):
-        pass
+    for num in lista:
+        primo = True
+        if num < 2:
+            primo = False
+        for i in range(2, num):
+            if num % i == 0:
+                primo = False
+                break
+        if primo:
+            primos.append(num)
+    if primos:
+        print("Los números primos de la listas son; ", primos)
+    else:
+        print("No hay números primos en la lista")
 
+print(f"La lista aleatoria es: {lista}")
+print(primos(lista))
+print(mayor(lista))
 
