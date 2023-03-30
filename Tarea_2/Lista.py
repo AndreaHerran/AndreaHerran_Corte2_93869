@@ -28,6 +28,13 @@ def primos(lista):
         print("Los números primos de la listas son; ", primos)
     else:
         print("No hay números primos en la lista")
+<<<<<<< HEAD
+=======
+
+print(f"La lista aleatoria es: {lista}")
+print(primos(lista))
+print(mayor(lista))
+>>>>>>> cab52a88571b567d1e2317ca911cd3db511f02ee
 
 print(f"La lista aleatoria es: {lista}")
 print(primos(lista))
